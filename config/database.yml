@@ -21,7 +21,9 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  url: <%= ENV['DATABASE_URL'] %># MySQL. Versions 5.5.8 and up are supported.
+  url: <%= ENV['DATABASE_URL'] %> 
+
+# MySQL. Versions 5.5.8 and up are supported.
 #
 # Install the MySQL driver
 #   gem install mysql2bundle exec puma -C config/puma.rb
